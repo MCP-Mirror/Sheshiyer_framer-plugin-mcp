@@ -1,0 +1,30 @@
+{
+  "name": "@modelcontextprotocol/server-framer-plugin",
+  "version": "0.1.0",
+  "description": "MCP server for creating and managing Framer plugins with web3 capabilities",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "dev": "tsc -w",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mcp",
+    "framer",
+    "plugin",
+    "web3"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^20.4.2",
+    "typescript": "^5.1.6"
+  }
+}
